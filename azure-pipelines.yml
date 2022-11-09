@@ -19,3 +19,5 @@ steps:
     cd hello
     go build
     dir
+    cd hello
+    dir
