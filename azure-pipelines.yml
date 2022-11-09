@@ -12,6 +12,8 @@ jobs:
         vmImage: macos-latest
     steps:
     - task: GoTool@0
+      inputs:
+        version: '1.19' 
     - script: |
         go version
     - script: |
@@ -23,6 +25,8 @@ jobs:
         vmImage: windows-latest
     steps:
     - task: GoTool@0
+      inputs:
+        version: '1.19' 
     - script: |
         go version
     - script: |
@@ -34,6 +38,8 @@ jobs:
       vmImage: ubuntu-latest
     steps:
     - task: GoTool@0
+      inputs:
+        version: '1.19' 
     - script: |
         go version
     - script: |
