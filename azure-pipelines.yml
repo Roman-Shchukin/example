@@ -12,7 +12,11 @@ pool:
 steps:
 - script: |
     cd hello
+- script: |
     go build
+- script: |
     dir
+- script: |
     cd hello
+- script: |
     dir
