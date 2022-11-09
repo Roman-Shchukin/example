@@ -11,6 +11,7 @@ jobs:
     pool:
         vmImage: macos-latest
     steps:
+    - task: GoTool@0
     - script: |
         go version
     - script: |
@@ -21,6 +22,7 @@ jobs:
     pool:
         vmImage: windows-latest
     steps:
+    - task: GoTool@0
     - script: |
         go version
     - script: |
@@ -31,6 +33,7 @@ jobs:
     pool:
       vmImage: ubuntu-latest
     steps:
+    - task: GoTool@0
     - script: |
         go version
     - script: |
