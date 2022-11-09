@@ -6,15 +6,33 @@
 trigger:
 - master
 
-pool:
-  vmImage: ubuntu-latest
+jobs:
+  - job: macos_test
+    pool:
+        vmImage: macos-latest
+    steps:
+    - script: |
+        go version
+    - script: |
+        cd hello
+        go build
 
-steps:
-- script: |
-    go version
-- script: |
-    cd hello
-    go build
-    dir
-    cd hello
-    dir
+  - job: windows_test
+    pool:
+        vmImage: windows-latest
+    steps:
+    - script: |
+        go version
+    - script: |
+        cd hello
+        go build
+
+  - job: ubuntu_test
+    pool:
+      vmImage: ubuntu-latest
+    steps:
+    - script: |
+        go version
+    - script: |
+        cd hello
+        go build
