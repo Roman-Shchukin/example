@@ -13,3 +13,4 @@ steps:
 - script: |
     cd hello
     go build
+    dir
