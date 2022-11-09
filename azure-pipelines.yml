@@ -11,10 +11,7 @@ pool:
 
 steps:
 - script: |
-    dir
-- script: |
-    cd hello
-    dir
+    go version
 - script: |
     cd hello
     go build
