@@ -12,3 +12,4 @@ pool: Default
 steps:
     - script: |
         echo $(Build.Repository.Name)
+        echo $(System.PullRequest.SourceRepositoryURI)
