@@ -11,8 +11,7 @@ pool: #Default
 
 steps:
     - script: |
-        echo $(Build.Repository.Name)
-    - script: |
-        echo $(System.PullRequest.SourceRepositoryURI)
-    - script: |
-        echo $(System.CollectionUri)
+        echo Build.Repository.Name: $(Build.Repository.Name)
+        echo System.PullRequest.SourceRepositoryURI: $(System.PullRequest.SourceRepositoryURI)
+        echo System.CollectionUri: $(System.CollectionUri)
+        echo System.PullRequest.TargetBranch: $(System.PullRequest.TargetBranch)
