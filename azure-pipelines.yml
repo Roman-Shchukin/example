@@ -14,3 +14,5 @@ steps:
         echo $(Build.Repository.Name)
     - script: |
         echo $(System.PullRequest.SourceRepositoryURI)
+    - script: |
+        echo $(System.CollectionUri)
